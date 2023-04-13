@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
   project     = "mcit-arun"
-  region      = "us-central1"
+  region      = "us"
 }
 
 
