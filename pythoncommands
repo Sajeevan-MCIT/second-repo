@@ -1,0 +1,17 @@
+assign by firstName=Sajee
+x=26
+
+print ("my name is:" ,firstName,lastName)
+my name is: Sajee Arun
+
+print ("my age is",x)
+my age is 26
+
+clientFirstName=input('Enter First Name:')
+Enter First Name:Smith
+
+to change from string to interger -bankBalance is a variable
+bankBalance=int(bankBalance)
+
+type(bankBalance) to know what type like string integer etc
+
