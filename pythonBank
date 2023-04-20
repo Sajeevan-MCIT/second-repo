@@ -1,0 +1,46 @@
+name=input("what is your name?")
+print(name)
+age=int(input("What is your age?"))
+print(age)
+if age<30:
+    print(name+ " is less than 30 years old, his current age right now is: "+str(age))
+elif age>26:
+    print(name+ " is greater than 30 years old, his current age right now is: "+str(age))
+else:
+    print(name+ " is"+str(age)+" years old") 
+
+
+if __name__ == '__main__':
+    CanadianFruit={'Banana','Berry','Cherry'}
+    RestOfTheWorldFruits={'Mango','Banana','Cherry'}
+    common_list =set(CanadianFruit).intersection(RestOfTheWorldFruits)
+    print(common_list)
+
+
+i=0
+bankBalance=0
+Fullname=input("What is your name?")
+invalidCount=0
+while i<10:
+    choice=input("What do you want to do in the bank, type D to deposit, type W to Withdraw")
+    if choice=="D"or choice=="d":
+        DepositAmount=int(input("How much do you want to deposit?"))
+        bankBalance=bankBalance+DepositAmount
+        i=i+1
+        print("Your current balance is : "+str(bankBalance))
+    elif choice=="W" or choice=="w":
+        WithdrawAmount=int(input("How much do you want to Withdraw?"))
+        if WithdrawAmount>500:
+            print("Sorry you would not be able to withdraw more than 500!!")
+        elif bankBalance-WithdrawAmount<0:
+            print("Sorry your bankbalance cannot be negative!!")
+        else:
+            bankBalance=bankBalance-WithdrawAmount
+            i=i+1
+            print("Your current balance is : "+str(bankBalance))
+    else:
+        print("Invalid Input, try again please")  
+        invalidCount=invalidCount+1          
+        if invalidCount>3:
+            print("Please get lost!")
+print(Fullname+" has a total Bank Balance of : "+str(bankBalance))
