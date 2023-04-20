@@ -46,3 +46,13 @@ while i<10:
         if invalidCount>3:
             print("Please get lost!")
 print(Fullname+" has a total Bank Balance of : "+str(bankBalance))
+
+# fruit with for
+CanadianFruits=["Banana","Blueberry","Cherry","apple","Mango"]
+for fruit in CanadianFruits:
+    if fruit=="Mango":
+        print("Mango is a Canadian Fruit")
+
+#print numbers till 10 with for 
+for number in range(10):
+    print(number)
