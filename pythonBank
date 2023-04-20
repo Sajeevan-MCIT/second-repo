@@ -1,3 +1,4 @@
+# printing name
 name=input("what is your name?")
 print(name)
 age=int(input("What is your age?"))
@@ -10,13 +11,14 @@ else:
     print(name+ " is"+str(age)+" years old") 
 
 
+# common list
 if __name__ == '__main__':
     CanadianFruit={'Banana','Berry','Cherry'}
     RestOfTheWorldFruits={'Mango','Banana','Cherry'}
     common_list =set(CanadianFruit).intersection(RestOfTheWorldFruits)
     print(common_list)
 
-
+# bank account
 i=0
 bankBalance=0
 Fullname=input("What is your name?")
