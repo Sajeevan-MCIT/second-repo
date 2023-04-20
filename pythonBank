@@ -56,3 +56,9 @@ for fruit in CanadianFruits:
 #print numbers till 10 with for 
 for number in range(10):
     print(number)
+    
+#print number if even with for
+
+for number in range(10):
+    if number%2==0:
+        print("The number "+str(number)+" is even")
