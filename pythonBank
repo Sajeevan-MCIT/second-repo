@@ -62,3 +62,16 @@ for number in range(10):
 for number in range(10):
     if number%2==0:
         print("The number "+str(number)+" is even")
+        
+        
+#print upper and lower case
+string=raw_input("The quick Brown Fox:")
+count1=0
+count2=0
+for i in string:
+    if(i.islower()):
+        count1=count1+1
+    elif(i.isupper()):
+        count2=count2+1
+print("The number of lowercase is: "+str(count1))
+print("The number of uppercase is: "+str(count2))
