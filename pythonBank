@@ -79,3 +79,5 @@ print("The number of uppercase is: "+str(count2))
 # reverse string
 txt = "1234abcd"[::-1]
 print(txt)
+
+#pizza store
